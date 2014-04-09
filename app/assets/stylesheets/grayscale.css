@@ -241,13 +241,13 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 0px;
+    padding-top: 50px;
     color: 000;
 }
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px;
     color: #fff;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
@@ -261,6 +261,7 @@ a:focus {
    color: #fff;
     width: 100%;
     padding: 50px;
+
 }
 
 .section-heading {color: 000;
@@ -269,22 +270,20 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 100px;
+        padding: 100px;
         background-color: #fff;
         color: 000;
 
     }
 
     .download-section {
-        padding: 100px 0;
+        padding: 100px;
         color: #fff;
     }
      .contact-section {
-        padding-top: 100px;
+        padding: 100px;
         background-color: #000;
         color: #fff;
-
-
     }
 
 }
