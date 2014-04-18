@@ -241,7 +241,6 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 50px;
     color: 000;
 }
 
@@ -270,7 +269,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding: 100px;
+        padding: 50px;
         background-color: #fff;
         color: 000;
 

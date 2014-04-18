@@ -1,37 +1,87 @@
-<h2>Sign up</h2>
+<div class="container">
+    <div class="row">
+      </a> Sign up!</legend>
+            <form action="#" method="post" class="form" role="form">
+        
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" name="password" placeholder="New Password" type="password" />
+            
+      
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+               
+                
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+              
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+               
+           
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button>
+            </form>
+        </div>
+    </div>
+</div> 
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="login-form">
+   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+      <div class="form-group">
+       <%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %>
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+      </div>
 
-  <div><%= f.label :password_confirmation %><br />
+      <div class="form-group">
+         <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="form-group"><%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
-      <div><%= f.label :first_name %><br />
+       <div class="form-group"><%= f.label :first_name %><br />
     <%= f.password_field :first_name, autocomplete: "off" %></div>
 
-         <div><%= f.label :last_name %><br />
+         <div class="form-group"> <%= f.label :last_name %><br />
     <%= f.password_field :last_name, autocomplete: "off" %></div>
 
-         <div><%= f.label :industry_1 %><br />
+         <div class="form-group"> <%= f.label :industry_1 %><br />
     <%= f.select :industry_1, industry_choices %></div>
 
-         <div><%= f.label :industry_2 %><br />
+          <div class="form-group"><%= f.label :industry_2 %><br />
     <%= f.select :industry_2, industry_choices %></div>
 
-         <div><%= f.label :speciality_1 %><br />
-         	  <%= f.select :speciality_1, speciality_choices %></div>
+          <div class="form-group"><%= f.label :speciality_1 %><br />
+            <%= f.select :speciality_1, speciality_choices %></div>
    
 
-         <div><%= f.label :speciality_2 %><br />
+          <div class="form-group"><%= f.label :speciality_2 %><br />
       <%= f.select :speciality_2, speciality_choices %></div>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+      <div class="form-group">
+        <%= f.submit "Sign up", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="panel-footer">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
+
+
+
+
+  
+ 
+
+
